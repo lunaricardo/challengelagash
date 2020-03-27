@@ -1,0 +1,11 @@
+select{
+    border:0;
+	background: none;
+    cursor: pointer;
+    background:$gray-light;
+	border-radius:100px;
+	padding: $space $space2;
+	font:$space3 $font;
+	color:$gray;
+	border:none;
+}

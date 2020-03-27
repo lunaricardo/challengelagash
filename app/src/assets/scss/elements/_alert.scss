@@ -1,0 +1,17 @@
+.alert{
+	position: fixed;
+	left:0;
+	right:0;
+	bottom:20px;
+	max-width: 300px;
+	border-radius:100px;
+	padding: $space3;
+	font:$space3 $font;
+	color:$white;
+	margin: auto;
+	z-index: 100;
+	text-align: center;
+	&.alert-success{
+		background-color: $primary;
+	}
+}

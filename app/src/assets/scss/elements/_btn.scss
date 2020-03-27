@@ -1,0 +1,41 @@
+button{
+	border:0;
+	background: none;
+	cursor: pointer;
+}
+.btn{
+	background:$gray-light;
+	border-radius:100px;
+	padding: $space $space2;
+	font:$space3 $font;
+	color:$gray;
+	border:none;
+	@extend %flexbox;
+	@include justify-content(space-between);
+	@include align-items(center);
+	cursor:pointer;
+	font:$space3 $font;
+	color:$gray;
+	&.btn-primary{
+		background-color: $primary;
+	}
+	&.btn-default{
+		background-color: $gray-light;
+		&:hover{
+			background-color: $primary;
+			color:$white;
+		}
+	}
+	&.btn-white{
+		background-color: $white;
+		color:$gray;
+	}
+	&.btn-dark{
+		background-color: transparentize($gray-dark, 0.2);
+		font:$space2 $font;
+		color:$white;
+	}
+	img{
+		margin-left: $space;
+	}
+}

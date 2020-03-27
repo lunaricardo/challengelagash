@@ -1,0 +1,31 @@
+header{
+  position:sticky;
+  position:-webkit-sticky;
+  top:0;
+  background:$white;
+  padding: $space2 0;
+  z-index:10;
+  .navbar{
+    @extend %flexbox;
+    @include justify-content(space-between);
+    .brand{
+
+    }
+    .user{
+      @extend %flexbox;
+      @include justify-content(space-between);
+      @include align-items(center);
+      .user-name{
+        font:$space3 $font;
+        color:$gray;
+        letter-spacing:-0.15px;
+        line-height:$space6;
+        text-align:left;
+      }
+      .user-money{
+        padding: $space $space $space $space2;
+        margin:0 0 0 $space2;
+      }
+    }
+  }
+}
